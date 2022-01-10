@@ -1,6 +1,7 @@
-﻿# Ontology Based Movie Recommendation System
+# Ontology Based Movie Recommendation System
 
-Simple Web App serving as a movie recommendation system based on a ontology built in the Protege app (https://protege.stanford.edu/).
+Simple Web App serving as a movie recommendation system based on a ontology built in the Protege app:
+https://protege.stanford.edu/
 
 SETUP:
 pip install -r backend/requirements.txt

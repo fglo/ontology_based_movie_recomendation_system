@@ -1,8 +1,8 @@
 from fastapi import APIRouter
 import collections
-from owlready2 import *
+from .. import onto
 
-onto = get_ontology("data/system_rekomendacji_extra.owl").load()
+onto = onto.get()
 
 router = APIRouter()
 

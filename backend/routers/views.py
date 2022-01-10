@@ -24,6 +24,7 @@ async def change_user(request: Request, username : str):
         current_user = username
     return templates.TemplateResponse("users.html", {"request": request, "username": current_user})
 
+@router.get("/", response_class=HTMLResponse, tags=["views"]) 
 @router.get("/views/movies", response_class=HTMLResponse, tags=["views"]) 
 async def view_movies_view(request: Request):
     global current_user

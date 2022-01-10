@@ -2,14 +2,16 @@ from fastapi import Depends, FastAPI
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 import uuid
-from routers import users, movies, categories, series, actors, tags, views
+
 from shutil import copyfile
 from owlready2 import *
 
-owlready2.JAVA_EXE = "C:\\Program Files\\java\\bin\\java.exe"
+from .routers import users, movies, categories, series, actors, tags, views
 
-onto = get_ontology("data/system_rekomendacji_extra.owl").load()
-sync_reasoner(onto, infer_property_values = True)
+from . import onto
+from . import config
+
+onto.init_onto()
 
 app = FastAPI(title="System rekomendacji filmów",
     version="0.9.2")
@@ -66,7 +68,6 @@ async def get_properties():
             # 'range': [r.name for r in list(p.range)] 
         })
     return response
-
     
 @app.get("/owl/individuals", tags=["owl"])
 async def get_individuals():

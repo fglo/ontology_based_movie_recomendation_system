@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Polecane filmy</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel="stylesheet" href="{{ url_for('css', path='uikit.min.css') }}" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css" />
+</head>
+
+<body>
+    <input id="username" hidden value="{{ username }}"></div>
+
+    <div class="uk-navbar-container" uk-navbar>
+        <div class="uk-navbar-left">
+            <a href="" class="uk-navbar-item uk-logo"></a>
+            <ul class="uk-navbar-nav">
+                <li><a href="/views/users">users</a></li>
+                <li><a href="/views/movies">movies</a></li>
+                <li class="uk-active"><a href="/views/recommended">recommended</a></li>
+                <li><a href="/views/watched">watched</a></li>
+            </ul>
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                <li><a href="/views/users">{{ username }}</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="uk-container">
+        <div class="uk-margin uk-section uk-section-default" uk-grid>
+            <div class="uk-card uk-card-hover uk-card-default uk-card-body uk-width-1-1">
+                <h3 class="uk-card-title">Most Watched</h3>
+                <table id="movies-table-most-watched" class="uk-table uk-table-hover display" width="100%">
+                </table>
+            </div>
+            <div class="uk-card uk-card-hover uk-card-default uk-card-body uk-width-1-1">
+                <h3 class="uk-card-title">Others Watched</h3>
+                <table id="movies-table-others-watched" class="uk-table uk-table-hover display" width="100%">
+                </table>
+            </div>
+            <div class="uk-card uk-card-hover uk-card-default uk-card-body uk-width-1-1">
+                <h3 class="uk-card-title">Similar To Movies You Watched</h3>
+                <table id="movies-table-similar-movies" class="uk-table uk-table-hover display" width="100%">
+                </table>
+            </div>
+            <div class="uk-card uk-card-hover uk-card-default uk-card-body uk-width-1-1">
+                <h3 class="uk-card-title">Finish Started Series</h3>
+                <table id="movies-table-rest-from-series" class="uk-table uk-table-hover display" width="100%">
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="{{ url_for('js', path='uikit.min.js') }}"></script>
+    <script src="{{ url_for('js', path='uikit-icons.min.js') }}"></script>
+    <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.23/js/dataTables.uikit.min.js "></script>
+
+    <script>
+        $(document).ready(function () {
+            var username = $('#username').val();
+
+
+            var config = {
+                columns: [
+                    { title: "Id" },
+                    { title: "Name" },
+                    { title: 'Action' }
+                ],
+                "columnDefs": [{
+                    "targets": -1,
+                    "data": null,
+                    "defaultContent": "<button>GO</button>"
+                }]
+            };
+
+            var table_most_watched;
+            $.get(`/owl/movies/watched`, function (data) {
+                console.log(data)
+                rows = [];
+                data.forEach(function (item, index, array) {
+                    rows.push([index, item]);
+                })
+                config.data = rows;
+                table_most_watched = $('#movies-table-most-watched').DataTable(config);
+            });
+
+            var table_others_watched;
+            var table_similar_movies;
+            var table_rest_from_series;
+            $.get(`/owl/movies/recommended/${username}`, function (data) {
+                console.log(data)
+                rows1 = [];
+                data["others_watched"].forEach(function (item, index, array) {
+                    rows1.push([index, item]);
+                })
+                rows2 = [];
+                data["similar_movies"].forEach(function (item, index, array) {
+                    rows2.push([index, item]);
+                })
+                rows3 = [];
+                data["rest_from_series"].forEach(function (item, index, array) {
+                    rows3.push([index, item]);
+                })
+                config.data = rows1;
+                table_others_watched = $('#movies-table-others-watched').DataTable(config);
+                config.data = rows2;
+                table_similar_movies = $('#movies-table-similar-movies').DataTable(config);
+                config.data = rows3;
+                table_rest_from_series = $('#movies-table-rest-from-series').DataTable(config);
+            });
+
+            $('#movies-table-most-watched').on('click', 'button', function () {
+                var data = table_most_watched.row($(this).parents('tr')).data();
+                window.location.href = `/views/movie/${data[1]}`;
+            });
+
+            $('#movies-table-others-watched').on('click', 'button', function () {
+                var data = table_others_watched.row($(this).parents('tr')).data();
+                window.location.href = `/views/movie/${data[1]}`;
+            });
+
+            $('#movies-table-similar-movies').on('click', 'button', function () {
+                var data = table_similar_movies.row($(this).parents('tr')).data();
+                window.location.href = `/views/movie/${data[1]}`;
+            });
+
+            $('#movies-table-rest-from-series').on('click', 'button', function () {
+                var data = table_rest_from_series.row($(this).parents('tr')).data();
+                window.location.href = `/views/movie/${data[1]}`;
+            });
+        });
+
+    </script>
+</body>
+
+</html>

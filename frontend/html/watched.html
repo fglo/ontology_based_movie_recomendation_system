@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Lista obejrzanych filmów</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel="stylesheet" href="{{ url_for('css', path='uikit.min.css') }}" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css" />
+</head>
+
+<body>
+    <input id="username" hidden value="{{ username }}"></div>
+
+    <div class="uk-navbar-container" uk-navbar>
+        <div class="uk-navbar-left">
+            <a href="" class="uk-navbar-item uk-logo"></a>
+            <ul class="uk-navbar-nav">
+                <li><a href="/views/users">users</a></li>
+                <li><a href="/views/movies">movies</a></li>
+                <li><a href="/views/recommended">recommended</a></li>
+                <li class="uk-active"><a href="/views/watched">watched</a></li>
+            </ul>
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                <li><a href="/views/users">{{ username }}</a></li>
+            </ul>
+        </div>    
+    </div>
+
+    <div class="uk-container">
+        <div class="uk-margin uk-section uk-section-default" uk-grid>
+            <div class="uk-card uk-card-hover uk-card-default uk-card-body uk-width-1-1">
+                <h3 class="uk-card-title">Obejrzane filmy:</h3>
+                <table id="movies-table" class="uk-table uk-table-hover display" width="100%">
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="{{ url_for('js', path='uikit.min.js') }}"></script>
+    <script src="{{ url_for('js', path='uikit-icons.min.js') }}"></script>
+    <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.23/js/dataTables.uikit.min.js "></script>
+
+    <script>
+        $(document).ready(function () {
+            var username = $('#username').val();
+
+            var table;
+            $.get(`/owl/movies/users/watched/${username}`, function (data) {
+                console.log(data)
+                rows = [];
+                data.forEach(function (item, index, array) {
+                    rows.push([index, item.movie]);
+                })
+                table = $('#movies-table').DataTable({
+                    data: rows,
+                    columns: [
+                        { title: "Id" },
+                        { title: "Name" },
+                        { title: 'Action' }
+                    ],
+                    "columnDefs": [{
+                        "targets": -1,
+                        "data": null,
+                        "defaultContent": "<button>GO</button>"
+                    }]
+                });
+            });
+
+            $('#movies-table').on('click', 'button', function () {
+                var data = table.row($(this).parents('tr')).data();
+                window.location.href = `/views/movie/${data[1]}`;
+            });
+        });
+
+    </script>
+</body>
+
+</html>

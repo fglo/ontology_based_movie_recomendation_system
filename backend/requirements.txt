@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+owlready2
+pydantic
+typing
+aiofiles
+jinja2 

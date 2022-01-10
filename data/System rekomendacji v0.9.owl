@@ -1,0 +1,2330 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#"
+     xml:base="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor_gra_w_Film -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor_gra_w_Film">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_obsadza_Aktor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor_gra_w_Seria -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor_gra_w_Seria">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Seria_obsadza_Aktor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Seria"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor_gral_z_Aktor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor_gral_z_Aktor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor_jest_polubiony_przez_Uzytkownik -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor_jest_polubiony_przez_Uzytkownik">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Uzytkownik_lubi_Aktor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Uzytkownik"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor_otrzymal_Nagroda -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor_otrzymal_Nagroda">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Nagroda_przyznana_dla_Aktor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Nagroda"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_byl_ogladany_przez_Uzytkownik -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_byl_ogladany_przez_Uzytkownik">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Uzytkownik_ogladal_Film"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Uzytkownik"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_jest_Kategoria -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_jest_Kategoria">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Kategoria_przypisana_do_Film"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Kategoria"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_jest_Prestiz -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_jest_Prestiz">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Prestiz_jest_Film"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Prestiz"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_jest_dla_Podzial_wiekowy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_jest_dla_Podzial_wiekowy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Podzial_wiekowy_ma_dozwolony_Film"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Podzial_wiekowy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_jest_polubiony_przez_Uzytkownik -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_jest_polubiony_przez_Uzytkownik">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Uzytkownik_lubi_Film"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Uzytkownik"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_jest_z_Seria -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_jest_z_Seria">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Seria_zawiera_Film"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Seria"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_obsadza_Aktor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_obsadza_Aktor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_otrzymal_Nagroda -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_otrzymal_Nagroda">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Nagroda_przyznana_dla_Film"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Nagroda"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_posiada_Tag -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_posiada_Tag">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Tag_przypisany_do_Film"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Tag"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_zostal_wyrezyserowany_przez_Rezyser -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_zostal_wyrezyserowany_przez_Rezyser">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Rezyser_wyrezyserowal_Film"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Rezyser"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Kategoria_przypisana_do_Film -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Kategoria_przypisana_do_Film">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Kategoria"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Nagroda_przyznana_dla_Aktor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Nagroda_przyznana_dla_Aktor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Nagroda"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Nagroda_przyznana_dla_Film -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Nagroda_przyznana_dla_Film">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Nagroda"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Oscar_Aktor_gra_w_Oscar_Film -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Oscar_Aktor_gra_w_Oscar_Film">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Oscar_Film_obsadza_Oscar_Aktor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Oscar_Aktor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Oscar_Film"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Oscar_Film_obsadza_Oscar_Aktor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Oscar_Film_obsadza_Oscar_Aktor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Oscar_Film"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Oscar_Aktor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Podzial_wiekowy_ma_dozwolony_Film -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Podzial_wiekowy_ma_dozwolony_Film">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Podzial_wiekowy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Prestiz_jest_Film -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Prestiz_jest_Film">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Prestiz"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Rezyser_wyrezyserowal_Film -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Rezyser_wyrezyserowal_Film">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Rezyser"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Rezyser_wyrezyserowal_Seria -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Rezyser_wyrezyserowal_Seria">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Seria_zostala_wyrezyserowana_przez_Rezyser"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Rezyser"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Seria"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Seria_ma_Nagroda -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Seria_ma_Nagroda">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Seria"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Nagroda"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Seria_obsadza_Aktor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Seria_obsadza_Aktor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Seria"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Seria_posiada_Tag -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Seria_posiada_Tag">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Seria"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Tag"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Seria_zawiera_Film -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Seria_zawiera_Film">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Seria"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Seria_zostala_wyrezyserowana_przez_Rezyser -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Seria_zostala_wyrezyserowana_przez_Rezyser">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Seria"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Rezyser"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Tag_przypisany_do_Film -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Tag_przypisany_do_Film">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Tag"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Uzytkownik_lubi_Aktor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Uzytkownik_lubi_Aktor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Uzytkownik"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Uzytkownik_lubi_Film -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Uzytkownik_lubi_Film">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Uzytkownik"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Uzytkownik_oglada_Seria -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Uzytkownik_oglada_Seria">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Uzytkownik"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Seria"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Uzytkownik_ogladal_Film -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Uzytkownik_ogladal_Film">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Uzytkownik"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Czas_trwania -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Czas_trwania">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Kolor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Kolor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Rok_premiery -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Rok_premiery">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#3D -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#3D">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Akcja -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Akcja">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_jest_Kategoria"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#kat_Akcja"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_posiada_Tag"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#tag_Bijatyka"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor_gra_w_Film"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor_gra_w_Seria"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Seria"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor_gral_z_Aktor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor_jest_polubiony_przez_Uzytkownik"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Uzytkownik"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Dlugi_film -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Dlugi_film">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Czas_trwania"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">150</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Krotki_film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Dramat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Dramat">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_jest_Kategoria"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#kat_Dramat"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Fantasy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Fantasy">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_jest_Kategoria"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#kat_Fantastyka"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_posiada_Tag"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#tag_Magia"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_byl_ogladany_przez_Uzytkownik"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Uzytkownik"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_jest_Kategoria"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Kategoria"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_jest_dla_Podzial_wiekowy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Podzial_wiekowy"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_jest_polubiony_przez_Uzytkownik"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Uzytkownik"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_jest_z_Seria"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Seria"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_obsadza_Aktor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_posiada_Tag"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Tag"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_zostal_wyrezyserowany_przez_Rezyser"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Rezyser"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Uzytkownik"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Horror -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Horror">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_jest_Kategoria"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#kat_Horror"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_posiada_Tag"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#tag_Nadprzyrodzone"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Kategoria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Kategoria">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#kat_Akcja"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#kat_Dramat"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#kat_Fantastyka"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#kat_Horror"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#kat_Komedia"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#kat_Kryminał"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#kat_Przygoda"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Uzytkownik"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Komedia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Komedia">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_jest_Kategoria"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#kat_Komedia"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_posiada_Tag"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#tag_Humor"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Krotki_film -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Krotki_film">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Czas_trwania"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">150</xsd:maxExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Kryminal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Kryminal">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_jest_Kategoria"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#kat_Kryminał"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_posiada_Tag"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#tag_Zabojstwo"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Nagroda -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Nagroda">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#nagroda_Oscar"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#nagroda_Zloty_glob"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Nagrodzony_Aktor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Nagrodzony_Aktor">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor_otrzymal_Nagroda"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Nagroda"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Nagrodzony_Film -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Nagrodzony_Film">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_otrzymal_Nagroda"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Nagroda"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Oscar_Aktor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Oscar_Aktor">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Nagrodzony_Aktor"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor_otrzymal_Nagroda"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#nagroda_Oscar"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Nagrodzony_Aktor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Oscar_Film -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Oscar_Film">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_otrzymal_Nagroda"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#nagroda_Oscar"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Nagrodzony_Film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Podzial_wiekowy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Podzial_wiekowy">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#wiek_Dorosli"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#wiek_Mlodziez"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Prestiz -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Prestiz">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Oscar_Film"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Oscar_Film_obsadza_Oscar_Aktor"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Oscar_Aktor"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Przygoda -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Przygoda">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_jest_Kategoria"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#kat_Przygoda"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Rezyser -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Rezyser">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Rezyser_wyrezyserowal_Film"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Rezyser_wyrezyserowal_Seria"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Seria"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Seria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Seria">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#seria_batman"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#seria_hobbit"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#seria_ojciec_chrzestny"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Tag -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Tag">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#tag_Bijatyka"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#tag_Humor"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#tag_Magia"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#tag_Nadprzyrodzone"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#tag_Sex"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#tag_Zabojstwo"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Uzytkownik -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Uzytkownik"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#aktor_Al_Pacino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#aktor_Al_Pacino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor"/>
+        <Aktor_gra_w_Film rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Ojciec_chrzestny"/>
+        <Aktor_gra_w_Film rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Ojciec_chrzestny_II"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#aktor_Andy_Serkis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#aktor_Andy_Serkis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor"/>
+        <Aktor_gra_w_Film rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Hobbit_Niezwykla_podroz"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#aktor_Benedict_Cumberbatch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#aktor_Benedict_Cumberbatch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor"/>
+        <Aktor_gra_w_Film rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Hobbit_Bitwa_pieciu_armii"/>
+        <Aktor_gra_w_Film rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Hobbit_Niezwykla_podroz"/>
+        <Aktor_gra_w_Film rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Hobbit_Pustkowie_smauga"/>
+        <Aktor_otrzymal_Nagroda rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#nagroda_Oscar"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#aktor_Christian_Bale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#aktor_Christian_Bale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor"/>
+        <Aktor_gra_w_Film rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Mroczny_rycerz"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#aktor_Christopher_Lee -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#aktor_Christopher_Lee">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor"/>
+        <Aktor_gra_w_Film rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Hobbit_Bitwa_pieciu_armii"/>
+        <Aktor_gra_w_Film rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Hobbit_Niezwykla_podroz"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#aktor_Gary_Oldman -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#aktor_Gary_Oldman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor"/>
+        <Aktor_gra_w_Film rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Mroczny_rycerz"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#aktor_Hugo_Weaving -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#aktor_Hugo_Weaving">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor"/>
+        <Aktor_gra_w_Film rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Hobbit_Bitwa_pieciu_armii"/>
+        <Aktor_gra_w_Film rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Hobbit_Niezwykla_podroz"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#aktor_Ian_McKellen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#aktor_Ian_McKellen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor"/>
+        <Aktor_gra_w_Film rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Hobbit_Bitwa_pieciu_armii"/>
+        <Aktor_gra_w_Film rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Hobbit_Niezwykla_podroz"/>
+        <Aktor_gra_w_Film rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Hobbit_Pustkowie_smauga"/>
+        <Aktor_otrzymal_Nagroda rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#nagroda_Zloty_glob"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#aktor_Michelle_Rodriguez -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#aktor_Michelle_Rodriguez">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor"/>
+        <Aktor_gra_w_Film rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Avatar"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#aktor_Morgan_Freeman -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#aktor_Morgan_Freeman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor"/>
+        <Aktor_gra_w_Film rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Mroczny_rycerz"/>
+        <Aktor_otrzymal_Nagroda rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#nagroda_Oscar"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#aktor_Orlando_Bloom -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#aktor_Orlando_Bloom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor"/>
+        <Aktor_gra_w_Film rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Hobbit_Bitwa_pieciu_armii"/>
+        <Aktor_gra_w_Film rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Hobbit_Pustkowie_smauga"/>
+        <Aktor_otrzymal_Nagroda rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#nagroda_Zloty_glob"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#aktor_Zoe_Saldana -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#aktor_Zoe_Saldana">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor"/>
+        <Aktor_gra_w_Film rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Avatar"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Avatar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Avatar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+        <Film_jest_Kategoria rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#kat_Akcja"/>
+        <Film_jest_Kategoria rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#kat_Fantastyka"/>
+        <Film_jest_Kategoria rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#kat_Przygoda"/>
+        <Film_otrzymal_Nagroda rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#nagroda_Oscar"/>
+        <Film_posiada_Tag rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#tag_Sex"/>
+        <Czas_trwania rdf:datatype="http://www.w3.org/2001/XMLSchema#int">162</Czas_trwania>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Hobbit_Bitwa_pieciu_armii -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Hobbit_Bitwa_pieciu_armii">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+        <Film_jest_Kategoria rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#kat_Fantastyka"/>
+        <Film_jest_Kategoria rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#kat_Przygoda"/>
+        <Film_jest_z_Seria rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#seria_hobbit"/>
+        <Film_otrzymal_Nagroda rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#nagroda_Oscar"/>
+        <Film_zostal_wyrezyserowany_przez_Rezyser rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#rezyser_Peter_Jackson"/>
+        <Czas_trwania rdf:datatype="http://www.w3.org/2001/XMLSchema#int">144</Czas_trwania>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Hobbit_Niezwykla_podroz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Hobbit_Niezwykla_podroz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+        <Film_jest_Kategoria rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#kat_Fantastyka"/>
+        <Film_jest_Kategoria rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#kat_Przygoda"/>
+        <Film_jest_z_Seria rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#seria_hobbit"/>
+        <Film_zostal_wyrezyserowany_przez_Rezyser rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#rezyser_Peter_Jackson"/>
+        <Czas_trwania rdf:datatype="http://www.w3.org/2001/XMLSchema#int">169</Czas_trwania>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Hobbit_Pustkowie_smauga -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Hobbit_Pustkowie_smauga">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+        <Film_jest_Kategoria rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#kat_Fantastyka"/>
+        <Film_jest_Kategoria rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#kat_Przygoda"/>
+        <Film_jest_z_Seria rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#seria_hobbit"/>
+        <Film_otrzymal_Nagroda rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#nagroda_Zloty_glob"/>
+        <Film_zostal_wyrezyserowany_przez_Rezyser rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#rezyser_Peter_Jackson"/>
+        <Czas_trwania rdf:datatype="http://www.w3.org/2001/XMLSchema#int">161</Czas_trwania>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Mroczny_rycerz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Mroczny_rycerz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+        <Film_jest_Kategoria rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#kat_Akcja"/>
+        <Film_jest_Kategoria rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#kat_Dramat"/>
+        <Film_jest_Kategoria rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#kat_Kryminał"/>
+        <Film_otrzymal_Nagroda rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#nagroda_Oscar"/>
+        <Czas_trwania rdf:datatype="http://www.w3.org/2001/XMLSchema#int">152</Czas_trwania>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Ojciec_chrzestny -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Ojciec_chrzestny">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+        <Film_jest_Kategoria rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#kat_Dramat"/>
+        <Film_jest_Kategoria rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#kat_Kryminał"/>
+        <Film_otrzymal_Nagroda rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#nagroda_Zloty_glob"/>
+        <Czas_trwania rdf:datatype="http://www.w3.org/2001/XMLSchema#int">175</Czas_trwania>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Ojciec_chrzestny_II -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Ojciec_chrzestny_II">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+        <Film_jest_Kategoria rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#kat_Dramat"/>
+        <Film_jest_Kategoria rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#kat_Kryminał"/>
+        <Czas_trwania rdf:datatype="http://www.w3.org/2001/XMLSchema#int">202</Czas_trwania>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#kat_Akcja -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#kat_Akcja">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Kategoria"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#kat_Dramat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#kat_Dramat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Kategoria"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#kat_Fantastyka -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#kat_Fantastyka">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Kategoria"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#kat_Horror -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#kat_Horror">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Kategoria"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#kat_Komedia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#kat_Komedia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Kategoria"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#kat_Kryminał -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#kat_Kryminał">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Kategoria"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#kat_Przygoda -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#kat_Przygoda">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Kategoria"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#nagroda_Oscar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#nagroda_Oscar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Nagroda"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#nagroda_Zloty_glob -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#nagroda_Zloty_glob">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Nagroda"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#rezyser_James_Cameron -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#rezyser_James_Cameron">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Rezyser"/>
+        <Rezyser_wyrezyserowal_Film rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Avatar"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#rezyser_Peter_Jackson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#rezyser_Peter_Jackson"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#seria_batman -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#seria_batman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Seria"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#seria_hobbit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#seria_hobbit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Seria"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#seria_ojciec_chrzestny -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#seria_ojciec_chrzestny">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Seria"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#tag_Bijatyka -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#tag_Bijatyka">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Tag"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#tag_Humor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#tag_Humor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Tag"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#tag_Magia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#tag_Magia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Tag"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#tag_Nadprzyrodzone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#tag_Nadprzyrodzone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Tag"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#tag_Sex -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#tag_Sex">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Tag"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#tag_Zabojstwo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#tag_Zabojstwo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Tag"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#user_Filip -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#user_Filip">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Uzytkownik"/>
+        <Uzytkownik_lubi_Film rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Avatar"/>
+        <Uzytkownik_lubi_Film rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Hobbit_Pustkowie_smauga"/>
+        <Uzytkownik_lubi_Film rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Mroczny_rycerz"/>
+        <Uzytkownik_lubi_Film rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Ojciec_chrzestny"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#user_Iwona -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#user_Iwona">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Uzytkownik"/>
+        <Uzytkownik_lubi_Film rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Avatar"/>
+        <Uzytkownik_lubi_Film rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Mroczny_rycerz"/>
+        <Uzytkownik_lubi_Film rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Ojciec_chrzestny"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#user_Sylwia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#user_Sylwia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Uzytkownik"/>
+        <Uzytkownik_lubi_Film rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Avatar"/>
+        <Uzytkownik_lubi_Film rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Hobbit_Niezwykla_podroz"/>
+        <Uzytkownik_lubi_Film rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Hobbit_Pustkowie_smauga"/>
+        <Uzytkownik_lubi_Film rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Mroczny_rycerz"/>
+        <Uzytkownik_lubi_Film rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Ojciec_chrzestny"/>
+        <Uzytkownik_ogladal_Film rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Avatar"/>
+        <Uzytkownik_ogladal_Film rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Hobbit_Niezwykla_podroz"/>
+        <Uzytkownik_ogladal_Film rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Mroczny_rycerz"/>
+        <Uzytkownik_ogladal_Film rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Ojciec_chrzestny"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#user_Tomek -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#user_Tomek">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Uzytkownik"/>
+        <Uzytkownik_lubi_Film rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#film_Ojciec_chrzestny"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#wiek_Dorosli -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#wiek_Dorosli">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Podzial_wiekowy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#wiek_Mlodziez -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#wiek_Mlodziez">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Podzial_wiekowy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="urn:swrl:var#f">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#a">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#s">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#a1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#f1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#a2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#u1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#n">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#r">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#t">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#u">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#t1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#p1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor_gra_w_Film"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#a1"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#f1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor_gra_w_Film"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#a2"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#f1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#f1"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#a2"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl:var#a1"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl:var#a1"/>
+                                                                <swrl:argument2 rdf:resource="urn:swrl:var#a2"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor_gral_z_Aktor"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#a1"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#a2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor_gra_w_Film"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#a1"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#f1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#f1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Uzytkownik_lubi_Film"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#u1"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#f1"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Uzytkownik"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#u1"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl:var#a1"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Uzytkownik_lubi_Aktor"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#u1"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#a1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#f"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Nagroda"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#n"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Seria"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_jest_z_Seria"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#f"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_otrzymal_Nagroda"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl:var#f"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl:var#n"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Seria_ma_Nagroda"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#n"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#f"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Rezyser"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Seria"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_zostal_wyrezyserowany_przez_Rezyser"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#f"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl:var#r"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_jest_z_Seria"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl:var#f"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Rezyser_wyrezyserowal_Seria"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Seria"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#f"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Tag"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Seria_zawiera_Film"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl:var#f"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_posiada_Tag"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl:var#f"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Seria_posiada_Tag"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Uzytkownik"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#u"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#f"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_jest_z_Seria"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#f"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Seria"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Uzytkownik_ogladal_Film"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl:var#u"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl:var#f"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Uzytkownik_oglada_Seria"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#u"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#f1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Tag"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#t1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Podzial_wiekowy"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#p1"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#SameIndividualAtom"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#p1"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#wiek_Dorosli"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_posiada_Tag"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl:var#f1"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl:var#t1"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#SameIndividualAtom"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl:var#t1"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#tag_Sex"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_jest_dla_Podzial_wiekowy"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#f1"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#p1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#f1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Tag"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#t1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Podzial_wiekowy"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#p1"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#SameIndividualAtom"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#p1"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#wiek_Mlodziez"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_posiada_Tag"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl:var#f1"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl:var#t1"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#SameIndividualAtom"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl:var#t1"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#tag_Zabojstwo"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_jest_dla_Podzial_wiekowy"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#f1"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#p1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Uzytkownik"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#u1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#f1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Uzytkownik_lubi_Film"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#u1"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#f1"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Uzytkownik_ogladal_Film"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#u1"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#f1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Oscar_Aktor"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#a1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor_gra_w_Film"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#a1"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#f1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Prestiz"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#p1"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Oscar_Film"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#f1"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_jest_Prestiz"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#f1"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#p1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Oscar_Aktor"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#a1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor_gra_w_Film"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#a1"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#f1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Oscar_Film"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#f1"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Oscar_Aktor_gra_w_Oscar_Film"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#a1"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#f1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#f"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Film_jest_z_Seria"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#f"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Seria"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor_gra_w_Film"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl:var#f"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sylwi/ontologies/2021/0/untitled-ontology-5#Aktor_gra_w_Seria"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

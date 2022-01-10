@@ -2,20 +2,18 @@ from fastapi import APIRouter
 import collections
 from .. import onto
 
-onto = onto.get()
-
 router = APIRouter()
 
 @router.get("/owl/movies", tags=["movies"])
 async def get_all_movies():
     global onto
-    return [ind.name for ind in list(onto.get_instances_of(onto["Film"]))]
+    return [ind.name for ind in onto.get_movies()]
 
 @router.get("/owl/movies/liked", tags=["movies"])
 async def get_most_liked_movies():
     global onto
     movies = {}
-    for user in list(onto.get_instances_of(onto["Uzytkownik"])):
+    for user in onto.get_users():
         for movie in list(user.Uzytkownik_lubi_Film):
             if movie.name not in movies:
                 movies[movie.name] = 0
@@ -38,7 +36,7 @@ async def get_most_liked_movies():
 async def get_most_watched_movies():
     global onto
     movies = {}
-    for user in list(onto.get_instances_of(onto["Uzytkownik"])):
+    for user in onto.get_users():
         for movie in list(user.Uzytkownik_ogladal_Film):
             if movie.name not in movies:
                 movies[movie.name] = 0
@@ -61,7 +59,7 @@ async def get_most_watched_movies():
 async def get_most_liked_movies_by_category():
     global onto
     categories = {}
-    for cat in list(onto.get_instances_of(onto["Kategoria"])):
+    for cat in onto.get_categories():
         categories[cat.name] = {}
         for movie in list(cat.Kategoria_przypisana_do_Film):
             for user in list(movie.Film_jest_polubiony_przez_Uzytkownik):
@@ -76,7 +74,7 @@ async def get_most_liked_movies_by_category():
 async def get_most_watched_movies_by_category():
     global onto
     categories = {}
-    for cat in list(onto.get_instances_of(onto["Kategoria"])):
+    for cat in onto.get_categories():
         categories[cat.name] = {}
         for movie in list(cat.Kategoria_przypisana_do_Film):
             for user in list(movie.Film_byl_ogladany_przez_Uzytkownik):
@@ -91,7 +89,7 @@ async def get_most_watched_movies_by_category():
 async def get_movies_of_category(category : str):
     global onto
     movies = []
-    for cat in list(onto.get_instances_of(onto["Kategoria"])):
+    for cat in onto.get_categories():
         if cat.name == category:
             movies =  [ind.name for ind in list(cat.Kategoria_przypisana_do_Film)]
             break
@@ -101,7 +99,7 @@ async def get_movies_of_category(category : str):
 async def get_movies_of_series(seriesname : str):
     global onto
     movies = []
-    for series in list(onto.get_instances_of(onto["Seria"])):
+    for series in onto.get_series():
         if series.name == seriesname:
             movies = [ind.name for ind in list(series.Seria_zawiera_Film)]
             break
@@ -111,7 +109,7 @@ async def get_movies_of_series(seriesname : str):
 async def get_users_liked_movies(username : str):
     global onto
     movies = []
-    for user in list(onto.get_instances_of(onto["Uzytkownik"])):
+    for user in onto.get_users():
         if user.name == username:
             for movie in list(user.Uzytkownik_lubi_Film):
                 movies.append({
@@ -124,7 +122,7 @@ async def get_users_liked_movies(username : str):
 async def get_users_watched_movies(username : str):
     global onto
     movies = []
-    for user in list(onto.get_instances_of(onto["Uzytkownik"])):
+    for user in onto.get_users():
         if user.name == username:
             for movie in list(user.Uzytkownik_ogladal_Film):
                 movies.append({
@@ -137,7 +135,7 @@ async def get_users_watched_movies(username : str):
 async def get_recommended_watched_movies_from_similar_users(username : str):
     global onto
     movies = []
-    for user in list(onto.get_instances_of(onto["Uzytkownik"])):
+    for user in onto.get_users():
         if user.name == username:
             movies = list(user.Uzytkownik_ogladal_Film)
 
@@ -163,7 +161,7 @@ async def get_recommended_watched_movies_from_similar_users(username : str):
 async def get_recommended_similar_movies(username : str):
     global onto
     movies = []
-    for user in list(onto.get_instances_of(onto["Uzytkownik"])):
+    for user in onto.get_users():
         if user.name == username:
             movies = list(user.Uzytkownik_ogladal_Film)
 
@@ -211,7 +209,7 @@ async def get_recommended_similar_movies(username : str):
 async def get_recommended_similar_series(username : str):
     global onto
     movies = []
-    for user in list(onto.get_instances_of(onto["Uzytkownik"])):
+    for user in onto.get_users():
         if user.name == username:
             movies = list(user.Uzytkownik_ogladal_Film)
 
@@ -248,33 +246,33 @@ async def get_recommended_movies(username : str):
 async def watch_movie(username : str, moviename : str):
     global onto
     user = None
-    for user in list(onto.get_instances_of(onto["Uzytkownik"])):
+    for user in onto.get_users():
         if user.name == username:
             break
     
     movie = None
-    for movie in list(onto.get_instances_of(onto["Film"])):
+    for movie in onto.get_movies():
         if movie.name == moviename:
             break
     
     if user is not None and movie is not None:
         user.Uzytkownik_ogladal_Film.append(movie)
-        sync_reasoner(onto, infer_property_values = True)
+        onto.sync()
 
 
 @router.get("/owl/movies/like/{username}/{moviename}", tags=["movies"])
 async def watch_movie(username : str, moviename : str):
     global onto
     user = None
-    for user in list(onto.get_instances_of(onto["Uzytkownik"])):
+    for user in onto.get_users():
         if user.name == username:
             break
     
     movie = None
-    for movie in list(onto.get_instances_of(onto["Film"])):
+    for movie in onto.get_movies():
         if movie.name == moviename:
             break
     
     if user is not None and movie is not None:
         user.Uzytkownik_lubi_Film.append(movie)
-        sync_reasoner(onto, infer_property_values = True)
+        onto.sync()

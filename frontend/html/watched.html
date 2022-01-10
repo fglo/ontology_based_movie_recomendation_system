@@ -4,10 +4,10 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Lista obejrzanych filmów</title>
+    <title>Watched movies</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
-    <link rel="stylesheet" href="{{ url_for('css', path='uikit.min.css') }}" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/css/uikit.min.css" />
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css" />
 </head>
 
@@ -34,7 +34,7 @@
     <div class="uk-container">
         <div class="uk-margin uk-section uk-section-default" uk-grid>
             <div class="uk-card uk-card-hover uk-card-default uk-card-body uk-width-1-1">
-                <h3 class="uk-card-title">Obejrzane filmy:</h3>
+                <h3 class="uk-card-title">Watched movies:</h3>
                 <table id="movies-table" class="uk-table uk-table-hover display" width="100%">
                 </table>
             </div>
@@ -42,8 +42,8 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="{{ url_for('js', path='uikit.min.js') }}"></script>
-    <script src="{{ url_for('js', path='uikit-icons.min.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit-icons.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.23/js/dataTables.uikit.min.js "></script>
 

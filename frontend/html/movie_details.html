@@ -4,10 +4,10 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Szczegóły filmu {{ moviename }}</title>
+    <title>Movie details: {{ moviename }}</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
-    <link rel="stylesheet" href="{{ url_for('css', path='uikit.min.css') }}" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/css/uikit.min.css" />
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css" />
 </head>
 
@@ -36,11 +36,11 @@
     <div class="uk-margin uk-section uk-section-default" uk-grid> 
         <div class="uk-grid-match uk-position-relative uk-padding uk-width-1-1" uk-grid>
             <div>
-                <h2 class="uk-tile uk-tile-default">Film: {{ moviename }}</h3>
+                <h2 class="uk-tile uk-tile-default">Movie: {{ moviename }}</h3>
             </div>
             <div>
                 <div><button class="uk-button uk-button-primary uk-position-center-right"
-                        id="watch-button">Polub</button></div>
+                        id="watch-button">LIKE</button></div>
             </div>
         </div>
 
@@ -63,8 +63,8 @@
 </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="{{ url_for('js', path='uikit.min.js') }}"></script>
-    <script src="{{ url_for('js', path='uikit-icons.min.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit-icons.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.23/js/dataTables.uikit.min.js "></script>
 
@@ -103,13 +103,7 @@
                     columns: [
                         { title: "Id" },
                         { title: "Name" },
-                        { title: 'Action' }
-                    ],
-                    "columnDefs": [{
-                        "targets": -1,
-                        "data": null,
-                        "defaultContent": "<button>GO</button>"
-                    }]
+                    ]
                 });
             });
             $.get(`/owl/tags/movies/${moviename}`, function (data) {
